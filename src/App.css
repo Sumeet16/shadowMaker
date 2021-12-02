@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cont_main_1{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.cont-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box{
+    width: 18%;
+    height: 36vh;
+    background-color: blue;
+    margin-top: 100px;
+}
+
+.toggle_btn_box{
+    width: 15%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn_font{
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.switch{
+    position: relative;
+    width: 47px;
+    height: 18px;
+    border-radius: 25px;
+    background-color: rgb(206, 206, 206);
+}
+
+.switch::after{
+    content: '';
+    position: absolute;
+    top: -3.2px;
+    left: 1px;
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.cont_main_2{
+    width: 100%;
+    height: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.cont-2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dump_box{
+    width: 80%;
+    height: 20vh;
+    margin-top: -100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    z-index: 2000;
+}
+
+svg{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.message{
+    font-size: 13px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 5px;
+}
+
+input[type="color"] {
+    background-color: transparent;
+	border: none;
+	width: 32px;
+	height: 32px;
+    cursor: pointer;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+    border-radius: 50%;
+}
